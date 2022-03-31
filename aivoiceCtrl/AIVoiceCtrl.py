@@ -3,8 +3,6 @@ import clr
 import os
 import sys
 
-from cv2 import resize
-
 class AIVoiceCtrl:
     def __init__(self, debug: bool = False) -> None:
         self.retained_text = ""
