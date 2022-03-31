@@ -66,6 +66,7 @@ class AIVoiceCtrl:
             exit()
 
         # 登録されているボイスプリセット名を取得
+        self.__vpNames.clear()
         for vp in self.__ttsControl.VoicePresetNames:
             self.__vpNames.append(vp)
 
