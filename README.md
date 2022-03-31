@@ -28,6 +28,6 @@ avc.change_voicepreset(avc.vpName[0])
 # 読み上げ
 avc.playTalk(f"読み上げテスト {avc.vpName[0]}")
 
-# 終了する場合はデストラクタで後始末される
+# 終了する場合はAIVoiceCtrlのオブジェクトを破棄すればデストラクタで後始末される
 del avc
 ```
