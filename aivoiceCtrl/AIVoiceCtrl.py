@@ -84,7 +84,7 @@ class AIVoiceCtrl:
             # 処理中であれば一旦停止
             self.__ttsControl.Stop()
         elif not self.__ttsControl.Status == self.__HostStatus.Idle:
-            print("AIVOICEに再接続します。")
+            self.__debug_print("AIVOICEに再接続します。")
             self.__init_aivoice()
 
         # 現在のテキストを保持
